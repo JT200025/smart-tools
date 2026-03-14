@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>YouTube Thumbnail Downloader | Smart Tools</title>
+
+<link rel="stylesheet" href="../Css/style.css">
+<link rel="icon" href="../favicon-16x16.png">
+
+<meta name="description" content="Download YouTube video thumbnails in HD quality for free.">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WY75STRX06"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WY75STRX06');
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div class="container header-container">
+
+<h1>YouTube Thumbnail Downloader</h1>
+<p>Download HD thumbnails from any YouTube video</p>
+
+<a href="../index.html" class="btn-secondary">← Back Home</a>
+
+</div>
+</header>
+
+
+<section class="tool container">
+
+<label>Paste YouTube Video URL</label>
+
+<input type="text" id="videoURL" placeholder="https://www.youtube.com/watch?v=VIDEOID" style="width:100%; padding:10px;">
+
+<br><br>
+
+<button onclick="getThumbnail()">Get Thumbnail</button>
+
+<p id="status"></p>
+
+<div id="thumbnailOutput"></div>
+
+</section>
+
+
+<section class="info container">
+
+<h2>About YouTube Thumbnail Downloader</h2>
+
+<p>
+This free tool lets you download thumbnails from any YouTube video.
+You can get HD thumbnails for thumbnails, blogs, or presentations.
+</p>
+
+<h2>How to Use</h2>
+
+<p>
+1. Copy the YouTube video link.<br>
+2. Paste the link above.<br>
+3. Click "Get Thumbnail" and download the image.
+</p>
+
+</section>
+
+
+<footer>
+<div class="container footer-container">
+<p>© 2026 Smart Tools</p>
+</div>
+</footer>
+
+<script src="../js/youtube-thumbnail.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Image to PDF Converter | Smart Tools</title>
+
+<link rel="stylesheet" href="../Css/style.css">
+<link rel="icon" href="../favicon-16x16.png">
+
+<meta name="description" content="Convert JPG and PNG images to PDF online for free.">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WY75STRX06"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WY75STRX06');
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div class="container header-container">
+<h1>Image to PDF Converter</h1>
+<p>Upload an image and convert it to PDF instantly</p>
+<a href="../index.html" class="btn-secondary">← Back Home</a>
+</div>
+</header>
+
+<section class="tools">
+<div class="container" id="PDF">
+
+<input type="file" id="imageInput" accept="image/*">
+
+<br><br>
+
+<button onclick="convertToPDF()">Convert to PDF</button>
+
+<br><br>
+
+<p id="status"></p>
+
+</div>
+</section>
+
+<section class="info container">
+
+<h2>About Image to PDF Converter</h2>
+
+<p>
+This free online Image to PDF converter allows you to quickly turn JPG
+or PNG images into PDF documents directly in your browser.
+No uploads to a server are required, making the process fast and secure.
+</p>
+
+<p>
+This tool is useful for students, professionals, and anyone who needs
+to create PDF files from images such as scanned documents,
+screenshots, or photos.
+</p>
+
+<h2>How to Use</h2>
+
+<p>
+1. Click the file input and select an image.<br>
+2. Press the "Convert to PDF" button.<br>
+3. Download your generated PDF file instantly.
+</p>
+
+</section>
+
+<footer>
+<div class="container footer-container">
+<p>© 2026 Smart Tools</p>
+</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="../js/image-to-pdf.js"></script>
+
+</body>
+</html>

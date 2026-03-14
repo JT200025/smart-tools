@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="../Css/style.css">
+<link rel="icon" href="../favicon-16x16.png">
+
+<head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WY75STRX06"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WY75STRX06');
+</script>
+</head>
+
+<header>
+  <div class="container header-container">
+    <h1>QR Code Generator | Smart Tools</h1>
+    <a href="../index.html" class="btn-secondary">← Back Home</a>
+  </div>
+</header>
+
+<section class="tool container">
+
+<div class="tool-box">
+
+<h3>Create QR Code</h3>
+
+<label>Enter Text or URL</label>
+
+<input type="text" id="qrInput" placeholder="Enter text or URL">
+
+<button onclick="generateQR()">Generate QR</button>
+
+<div class="result" style="margin-top:20px;">
+<canvas id="qrCanvas"></canvas>
+</div>
+
+</div>
+
+</section>
+
+<section class="info container">
+
+<h2>About QR Code Generator</h2>
+
+<p>
+This free QR code generator allows you to create QR codes instantly
+for URLs, text, WiFi access, and more. Simply enter your content and
+generate a QR code that can be scanned by any smartphone.
+</p>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script src="../js/qrcode.js"></script>

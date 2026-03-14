@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Image Format Converter | Smart Tools</title>
+
+<link rel="stylesheet" href="../Css/style.css">
+<link rel="icon" href="../favicon-16x16.png">
+
+<meta name="description" content="Convert images between JPG, PNG and WEBP formats online for free.">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WY75STRX06"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WY75STRX06');
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div class="container header-container">
+
+<h1>Image Format Converter</h1>
+<p>Convert images between JPG, PNG and WEBP instantly</p>
+
+<a href="../index.html" class="btn-secondary">← Back Home</a>
+
+</div>
+</header>
+
+
+<section class="tool container">
+
+<label>Select Image</label>
+
+<input type="file" id="imageInput" accept="image/*">
+
+<br><br>
+
+<label>Select Output Format</label>
+
+<select id="formatSelect">
+<option value="image/jpeg">JPG</option>
+<option value="image/png">PNG</option>
+<option value="image/webp">WEBP</option>
+</select>
+
+<br><br>
+
+<button onclick="convertImage()" class="btn-primary">Convert Image</button>
+
+<p id="status"></p>
+
+<br>
+
+<canvas id="canvas" style="max-width:100%; display:none;"></canvas>
+
+<br>
+
+<a id="downloadLink" class="btn-secondary" style="display:none;">Download Image</a>
+
+</section>
+
+
+<section class="info container">
+
+<h2>About Image Converter</h2>
+
+<p>
+This free tool lets you convert images between popular formats like JPG, PNG, and WEBP directly in your browser.
+No uploads are required, making it fast and secure.
+</p>
+
+<h2>How to Use</h2>
+
+<p>
+1. Upload your image.<br>
+2. Select the output format.<br>
+3. Click Convert and download the new file.
+</p>
+
+</section>
+
+
+<footer>
+<div class="container footer-container">
+<p>© 2026 Smart Tools</p>
+</div>
+</footer>
+
+<script src="../js/image-converter.js"></script>
+
+</body>
+</html>

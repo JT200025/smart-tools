@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Image Resizer | Smart Tools</title>
+
+<link rel="stylesheet" href="../Css/style.css">
+<link rel="icon" href="../favicon-16x16.png">
+
+<meta name="description" content="Resize images online quickly and easily.">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WY75STRX06"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WY75STRX06');
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div class="container header-container">
+
+<h1>Image Resizer</h1>
+<p>Resize images to any dimension instantly</p>
+
+<a href="../index.html" class="btn-secondary">← Back Home</a>
+
+</div>
+</header>
+
+
+<section class="tool container">
+
+<label for="imageInput">Select Image</label>
+<input type="file" id="imageInput" accept="image/*">
+
+
+<label for="widthInput">Width (px)</label>
+<input type="number" id="widthInput" placeholder="Enter width">
+
+
+<label for="heightInput">Height (px)</label>
+<input type="number" id="heightInput" placeholder="Enter height">
+
+
+<button onclick="resizeImage()">Resize Image</button>
+
+<p id="status"></p>
+
+<canvas id="canvas" style="max-width:100%;"></canvas>
+
+<a id="downloadLink" class="btn-secondary" style="display:none;">Download Image</a>
+
+</section>
+
+
+<section class="info container">
+
+<h2>About Image Resizer</h2>
+
+<p>
+This free image resizer lets you change the width and height of any image.
+It works directly in your browser and keeps your images private.
+</p>
+
+<h2>How to Use</h2>
+
+<p>
+1. Upload an image.<br>
+2. Enter the new width and height.<br>
+3. Click Resize and download the result.
+</p>
+
+</section>
+
+
+<footer>
+<div class="container footer-container">
+<p>© 2026 Smart Tools</p>
+</div>
+</footer>
+
+<script src="../js/image-resizer.js"></script>
+
+</body>
+</html>

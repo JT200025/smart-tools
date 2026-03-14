@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Zone Converter | Smart Tools</title>
+<link rel="stylesheet" href="../Css/style.css">
+<link rel="icon" href="../favicon-16x16.png">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WY75STRX06"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WY75STRX06');
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div class="container header-container">
+<h1>Time Zone Converter</h1>
+<a href="../index.html" class="btn-secondary">← Back Home</a>
+</div>
+</header>
+
+<section class="tool container">
+
+<label>Select Time Zone:</label>
+
+<select id="timezone">
+<option value="UTC">UTC</option>
+<option value="America/New_York">New York</option>
+<option value="Europe/London">London</option>
+<option value="Asia/Tokyo">Tokyo</option>
+<option value="Asia/Colombo">Colombo</option>
+</select>
+
+<button onclick="convertTime()">Get Time</button>
+
+<p id="timeResult"></p>
+
+</section>
+
+
+<section class="info container">
+<h2>About Time Zone Converter</h2>
+
+<p>
+The Time Zone Converter helps you check the current time in different
+parts of the world. It is useful for remote work, international meetings,
+and travel planning.
+</p>
+
+</section>
+
+<script src="../js/timezone.js"></script>
+
+</body>
+</html>

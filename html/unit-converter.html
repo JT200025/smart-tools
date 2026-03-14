@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit Converter | Smart Tools</title>
+<link rel="stylesheet" href="../Css/style.css">
+<link rel="icon" href="../favicon-16x16.png">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WY75STRX06"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WY75STRX06');
+</script>
+
+</head>
+<body>
+
+<header>
+  <div class="container header-container">
+    <h1>Unit Converter</h1>
+    <a href="../index.html" class="btn-secondary">← Back Home</a>
+  </div>
+</header>
+
+<section class="tool container">
+
+<div class="tool-box">
+
+<h3>Convert Units</h3>
+
+<label>Enter Value</label>
+<input type="number" id="unitInput" placeholder="Enter number">
+
+<label>Convert From</label>
+<select id="fromUnit">
+<option value="km">Kilometers</option>
+<option value="miles">Miles</option>
+<option value="kg">Kilograms</option>
+<option value="lbs">Pounds</option>
+<option value="c">Celsius</option>
+<option value="f">Fahrenheit</option>
+</select>
+
+<label>Convert To</label>
+<select id="toUnit">
+<option value="km">Kilometers</option>
+<option value="miles">Miles</option>
+<option value="kg">Kilograms</option>
+<option value="lbs">Pounds</option>
+<option value="c">Celsius</option>
+<option value="f">Fahrenheit</option>
+</select>
+
+<button onclick="convertUnit()">Convert</button>
+
+<div class="result" id="unitResult"></div>
+
+</div>
+
+</section>
+
+<section class="info container">
+
+<h2>About Unit Converter</h2>
+
+<p>
+This free unit converter helps you quickly convert between kilometers,
+miles, kilograms, pounds, Celsius, and Fahrenheit. Simply enter a value,
+choose the units, and instantly see the result.
+</p>
+
+</section>
+
+<script src="../js/converter.js"></script>
+</body>
+</html>
