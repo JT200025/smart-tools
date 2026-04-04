@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ultimate Icon Generator | Smart Tools</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="/favicon-16x16.png">
+
+</head>
+
+<body>
+
+<header>
+<div class="container header-container">
+<h1>Ultimate Icon Generator</h1>
+<p>Create icons, favicons & app icons instantly</p>
+<a href="../index.html" class="btn-secondary">← Back Home</a>
+</div>
+</header>
+
+
+
+<section class="tool-box">
+
+<!-- TEXT -->
+<label>Icon Text</label>
+<input type="text" id="iconText" placeholder="ST">
+
+<!-- IMAGE -->
+<label>Upload Image</label>
+<input type="file" id="imageInput" accept="image/*">
+
+<!-- COLORS -->
+<label>Background Color</label>
+<input type="color" id="bgColor" value="#00ff9d">
+
+<label>Gradient Color</label>
+<input type="color" id="gradColor" value="#00c3ff">
+
+<label>Text Color</label>
+<input type="color" id="textColor" value="#000000">
+
+<!-- SHAPE -->
+<label>Shape</label>
+<select id="shape">
+<option value="square">Square</option>
+<option value="rounded">Rounded</option>
+<option value="circle">Circle</option>
+</select>
+
+<!-- SIZE -->
+<label>Size (px)</label>
+<input type="number" id="size" value="256" max="512">
+
+<button onclick="generateIcon()">Generate Icon</button>
+
+<div class="preview-box">
+    <canvas id="canvas"></canvas>
+</div>
+
+<div style="margin-top:15px;">
+<button onclick="downloadPNG()">Download PNG</button>
+<button onclick="downloadFavicon()">Download Favicon Pack</button>
+</div>
+
+</section>
+
+
+<section class="info container" >
+<h2>About Icon Generator</h2>
+
+<p>
+This free icon generator tool lets you create custom icons, favicons, and app icons instantly.
+You can use text, colors, gradients, or upload your own image to design unique icons directly in your browser.
+No uploads are required, ensuring fast performance and complete privacy.
+</p>
+
+<h2>How to Use</h2>
+
+<p>
+1. Enter text or upload an image.<br>
+2. Choose background color, gradient, and text color.<br>
+3. Select shape and size.<br>
+4. Click "Generate Icon" and download your icon or favicon pack.
+</p>
+
+<h2>Why Use This Icon Generator?</h2>
+
+<p>
+• Create high-quality icons in seconds<br>
+• Supports favicon and app icon sizes<br>
+• No installation or signup required<br>
+• Works on all devices (mobile & desktop)<br>
+• 100% free and secure
+</p>
+
+
+<h2>Why Use This Icon Generator?</h2>
+
+<p>
+• Create high-quality icons in seconds<br>
+• Supports favicon and app icon sizes<br>
+• No installation or signup required<br>
+• Works on all devices (mobile & desktop)<br>
+• 100% free and secure
+</p>
+
+</section>
+
+
+<footer>
+<div class="container footer-container">
+<p>© 2026 Smart Tools</p>
+</div>
+</footer>
+
+<script src="../js/icon-generator.js"></script>
+
+</body>
+</html>
