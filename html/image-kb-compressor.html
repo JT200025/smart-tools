@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Image KB Compressor | Smart Tools</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="/favicon-16x16.png">
+
+<meta name="description" content="Compress image to exact KB size online for free.">
+
+</head>
+
+<body>
+
+<header>
+<div class="container header-container">
+
+<h1>Image KB Compressor</h1>
+<p>Compress images to exact file size (KB)</p>
+
+<a href="../index.html" class="btn-secondary">← Back Home</a>
+
+</div>
+</header>
+
+
+<section class="tool-box">
+
+<label>Select Image</label>
+<input type="file" id="imageInput" accept="image/*">
+
+<label>Target Size (KB)</label>
+<input type="number" id="targetSize" placeholder="Enter size (e.g. 100)">
+
+<button onclick="compressImage()">Compress Image</button>
+
+<p id="status"></p>
+
+<canvas id="canvas" style="max-width:100%;"></canvas>
+
+<a id="downloadLink" class="btn-secondary" style="display:none;">Download Image</a>
+
+</section>
+
+
+<section class="info container">
+
+<h2>Quick Compress Options</h2>
+
+<div class="grid">
+
+<button onclick="quickCompress(20)">20 KB</button>
+<button onclick="quickCompress(50)">50 KB</button>
+<button onclick="quickCompress(100)">100 KB</button>
+<button onclick="quickCompress(150)">150 KB</button>
+<button onclick="quickCompress(200)">200 KB</button>
+<button onclick="quickCompress(300)">300 KB</button>
+
+</div>
+
+</section>
+
+<section class="info container">
+
+<h2>About Image KB Compressor</h2>
+
+<p>
+This free Image KB Compressor allows you to reduce image file size to an exact target in KB.
+It is perfect for uploading images to websites, forms, or platforms with strict size limits.
+All processing happens directly in your browser, ensuring fast compression and complete privacy.
+</p>
+
+<h2>How to Use</h2>
+
+<p>
+1. Upload your image file.<br>
+2. Enter the desired file size in KB.<br>
+3. Click "Compress Image" and wait for processing.<br>
+4. Download the compressed image instantly.
+</p>
+
+<h2>Why Use This Tool?</h2>
+
+<p>
+• Compress images to an exact KB size<br>
+• No quality loss beyond necessary compression<br>
+• Fast and secure (no uploads required)<br>
+• Works on mobile and desktop devices<br>
+• 100% free and easy to use
+</p>
+
+</section>
+
+<footer>
+<div class="container footer-container">
+<p>© 2026 Smart Tools</p>
+</div>
+</footer>
+
+<script src="../js/image-kb-compressor.js"></script>
+
+</body>
+</html>
