@@ -506,6 +506,11 @@ border-radius:12px;
 .tool-card:nth-child(19){border-top:3px solid #ff4d6d;}
 .tool-card:nth-child(20){border-top:3px solid #7c4dff;}
 
+/* new two */
+
+.tool-card:nth-child(21){border-top:3px solid #ff4d6d;}
+.tool-card:nth-child(22){border-top:3px solid #7c4dff;}
+
 
 .tool{
 padding:30px;
@@ -807,4 +812,49 @@ font-weight:500;
 
 .tools-list a:hover{
 color:#2e7d32;
+}
+
+#canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.tool-box {
+    max-width: 500px; /* or 600px */
+    margin: auto;
+    overflow: hidden;
+}
+
+.preview-box {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* for other tools now */
+.info {
+    margin-top: 60px;
+    padding: 25px;
+    background: #111;
+    border-radius: 12px;
+    line-height: 1.7;
+}
+
+.info h2 {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #00ff9d;
+}
+
+.info p {
+    color: #ccc;
+}
+
+.info ol {
+    margin-left: 20px;
+    color: #ddd;
 }
