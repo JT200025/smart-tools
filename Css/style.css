@@ -858,3 +858,23 @@ color:#2e7d32;
     margin-left: 20px;
     color: #ddd;
 }
+
+.home-content {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #0f172a;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  color: #e5e7eb;
+}
+
+.home-content h2 {
+  color: #22c55e;
+}
+
+.home-page .content-section {
+  background: #0f172a;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
