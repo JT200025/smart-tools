@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jt200025.github.io/smart-tools/sitemap.xml
+Sitemap: https://smarttoolspro.online/sitemap.xml
+
+# Block old workers.dev (optional)
+Disallow: /*workers.dev
