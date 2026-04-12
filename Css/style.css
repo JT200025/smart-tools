@@ -216,6 +216,16 @@ font-size:14px;
 color:#aaa;
 }
 
+
+.tool-card{
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tool-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
 /* PREMIUM BUTTON */
 
 .btn-secondary{
@@ -877,4 +887,96 @@ color:#2e7d32;
   background: #0f172a;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+/* =========================
+   STP NAVBAR (SAFE UNIQUE)
+   ========================= */
+
+#stp-navbar{
+  background:#0b0b0b;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  padding:14px 0;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+.stp-nav-container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.stp-logo a{
+  color:#00ff9d;
+  font-size:20px;
+  font-weight:700;
+  text-decoration:none;
+  letter-spacing:0.5px;
+}
+
+.stp-nav-links{
+  list-style:none;
+  display:flex;
+  gap:18px;
+  margin:0;
+  padding:0;
+}
+
+.stp-nav-links li a{
+  color:#cbd5e1;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+  font-size:14px;
+}
+
+.stp-nav-links li a:hover{
+  color:#00ff9d;
+}
+
+/* Mobile safe (optional) */
+@media(max-width:768px){
+  .stp-nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+  }
+}
+
+body{
+  animation: stpFadeIn 0.4s ease;
+}
+
+@keyframes stpFadeIn{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+.btn-primary, .btn-secondary{
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-primary:hover, .btn-secondary:hover{
+  transform: scale(1.03);
+  opacity: 0.95;
+}
+
+.tool-card img{
+  transition: transform 0.3s ease;
+}
+
+.tool-card:hover img{
+  transform: scale(1.08);
+}
+
+section{
+  scroll-margin-top: 80px;
 }
