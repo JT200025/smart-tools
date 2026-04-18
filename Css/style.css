@@ -980,3 +980,479 @@ body{
 section{
   scroll-margin-top: 80px;
 }
+
+
+
+
+
+
+/* layout */
+.stp-nav-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* menu button (hidden on desktop) */
+.stp-menu-toggle{
+  display:none;
+  font-size:26px;
+  background:none;
+  border:none;
+  color:#00ff9d;
+  cursor:pointer;
+}
+
+/* desktop menu */
+.stp-nav-links{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+/* mobile */
+@media (max-width:768px){
+
+  .stp-menu-toggle{
+    display:block;
+  }
+
+  .stp-nav-links{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:60px;
+    right:10px;
+    background:#1e293b;
+    width:200px;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+  }
+
+  .stp-nav-links.active{
+    display:flex;
+  }
+
+  .stp-nav-links li{
+    padding:10px 0;
+  }
+}
+
+.home-content h2 {
+  margin-top: 40px;     /* space above heading */
+  margin-bottom: 15px;  /* space below heading */
+}
+
+.home-content p {
+  margin-bottom: 18px;  /* space between paragraphs */
+}
+
+.home-content ul,
+.home-content ol {
+  margin: 15px 0 20px 20px;
+}
+
+.home-content li {
+  margin-bottom: 10px;
+}
+
+.home-content h2:first-child {
+  margin-top: 0;
+}
+.home-content {
+  margin: 60px auto;  /* space between sections */
+}
+
+
+
+
+
+
+/* =========================
+   Image to PDF Content UI
+   Unique System: STP I2P v1
+========================= */
+
+.stp-content-wrapper {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.7;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+.stp-content-wrapper h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.stp-content-wrapper h2 {
+    font-size: 22px;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eee;
+}
+
+.stp-content-wrapper p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.stp-content-wrapper ul {
+    padding-left: 20px;
+}
+
+.stp-content-wrapper ul li {
+    margin-bottom: 8px;
+}
+
+.stp-content-wrapper strong {
+    color: #000;
+}
+
+.stp-tool-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00ff9d; /* clean green */
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+/* MAIN CONTENT */
+.stp-i2p-full-x77 {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.7;
+}
+
+.stp-i2p-title-x77 {
+  text-align: center;
+  font-size: 32px;
+  color: #00ff9d;
+  margin-bottom: 20px;
+}
+
+/* FAQ */
+.stp-faq-x77 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stp-faq-item-x77 {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0c0808;
+}
+
+.stp-faq-q-x77 {
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stp-faq-a-x77 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+
+.stp-faq-item-x77.active {
+  border: 2px solid #a855f7;
+  background: #0c0808;
+}
+
+.stp-faq-item-x77.active .stp-faq-a-x77 {
+  max-height: 200px;
+  padding: 15px;
+}
+
+
+
+
+
+.related-tools-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.related-tools-card a {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.related-tools-card a:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #0056b3, #0099cc);
+}
+
+/* =========================
+ PDF MERGE SYSTEM (UX21)
+========================= */
+
+.stp-pdfmerge-wrap-ux21 {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.7;
+}
+
+.stp-pdfmerge-title-ux21 {
+  text-align: center;
+  font-size: 32px;
+  color: #00ff9d;
+  margin-bottom: 20px;
+}
+
+/* FAQ */
+.stp-pdfmerge-faq-ux21 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stp-pdfmerge-item-ux21 {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0c0808;
+}
+
+.stp-pdfmerge-q-ux21 {
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stp-pdfmerge-a-ux21 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+
+.stp-pdfmerge-item-ux21.active {
+  border: 2px solid #a855f7;
+  background:#0c0808;
+}
+
+.stp-pdfmerge-item-ux21.active .stp-pdfmerge-a-ux21 {
+  max-height: 200px;
+  padding: 15px;
+}
+
+
+
+/* =========================
+ PDF Compressor SYSTEM (UX21)
+========================= */
+
+/* WRAPPER */
+.stp-pdfcomp-wrap-ux21 {
+  margin-top: 40px;
+  line-height: 1.7;
+}
+
+/* TITLE */
+.stp-pdfcomp-title-ux21 {
+  color: #00ff9d;
+  margin-bottom: 10px;
+}
+
+/* WRAPPER */
+
+.stp-pdfcompress-wrap-ux99 {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.7;
+}
+
+.stp-pdfcompress-title-ux99 {
+  text-align: center;
+  font-size: 32px;
+  color: #00ff9d;
+  margin-bottom: 20px;
+}
+
+/* FAQ */
+.stp-pdfcompress-faq-ux99 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stp-pdfcompress-item-ux99 {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0c0808;
+}
+
+.stp-pdfcompress-q-ux99 {
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stp-pdfcompress-a-ux99 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+
+.stp-pdfcompress-item-ux99.active {
+  border: 2px solid #a855f7;
+  background:#0c0808;
+}
+
+.stp-pdfcompress-item-ux99.active .stp-pdfcompress-a-ux99 {
+  max-height: 200px;
+  padding: 15px;
+}
+
+
+
+/* =========================
+ PDF SPLIT FAQ SYSTEM (UX77)
+========================= */
+
+.stp-pdfsplit-wrap-ux77 {
+  margin-top: 40px;
+}
+
+.stp-pdfsplit-title-ux77 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* FAQ Container */
+.stp-pdfsplit-faq-ux77 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Each Item */
+.stp-pdfsplit-item-ux77 {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0c0808;
+}
+
+/* Question */
+.stp-pdfsplit-q-ux77 {
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+/* Answer */
+.stp-pdfsplit-a-ux77 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: all 0.3s ease;
+  color: #ccc;
+}
+
+/* Active State */
+.stp-pdfsplit-item-ux77.active {
+  border: 2px solid #a855f7;
+}
+
+.stp-pdfsplit-item-ux77.active .stp-pdfsplit-a-ux77 {
+  max-height: 200px;
+  padding: 15px;
+}
+
+
+
+/* =========================
+ PDF SPLIT FAQ SYSTEM (UX77)
+========================= */
+
+.stp-pdftojpg-wrap-ux55 h1 {
+ color: #00ff9d;
+}
+
+.stp-pdfsplit-wrap-ux77 {
+  margin-top: 40px;
+}
+
+.stp-pdfsplit-title-ux77 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* FAQ Container */
+.stp-pdfsplit-faq-ux77 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Each Item */
+.stp-pdfsplit-item-ux77 {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0c0808;
+}
+
+/* Question */
+.stp-pdfsplit-q-ux77 {
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+/* Answer */
+.stp-pdfsplit-a-ux77 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  color: #ccc;
+}
+
+/* Active */
+.stp-pdfsplit-item-ux77.active {
+  border: 2px solid #a855f7;
+}
+
+.stp-pdfsplit-item-ux77.active .stp-pdfsplit-a-ux77 {
+  max-height: 500px; /* BIG FIX */
+  padding: 15px;
+}
