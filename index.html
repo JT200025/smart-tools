@@ -82,15 +82,16 @@ gtag('config', 'G-WY75STRX06');
       <a href="index.html">Smart Tools</a>
     </div>
 
+    <!-- ✅ PASTE BUTTON HERE -->
     <button class="stp-menu-toggle" onclick="toggleMenu()">☰</button>
 
+    <!-- ✅ KEEP THIS UL (just make sure id is correct) -->
     <ul class="stp-nav-links" id="stp-nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="tools.html">Tools</a></li>
       <li><a href="/Blog/blog-index.html">Blog</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
     </ul>
 
   </div>
@@ -510,8 +511,16 @@ Yes, Smart Tools works on mobile, tablet, and desktop devices.</p>
 </div>
 </footer>
 
+<!-- your footer here -->
 
-<script src="js/main.js"></script>
+<script>
+function toggleMenu() {
+  document.getElementById("stp-nav-links").classList.toggle("active");
+}
+</script>
+
+
+<!-- <script src="js/main.js"></script> -->
 
 </body>
 </html>
