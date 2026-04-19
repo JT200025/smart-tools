@@ -960,6 +960,69 @@ body{
   }
 }
 
+
+
+/* =========================
+   FINAL MOBILE NAV FIX (OVERRIDE)
+   ========================= */
+
+/* Hide toggle on desktop */
+.stp-menu-toggle{
+  display:none;
+}
+
+/* Desktop menu */
+.stp-nav-links{
+  display:flex;
+  gap:20px;
+}
+
+/* MOBILE FIX */
+@media (max-width:768px){
+
+  /* Show hamburger */
+  .stp-menu-toggle{
+    display:block;
+    font-size:26px;
+    background:none;
+    border:none;
+    color:#00ff9d;
+    cursor:pointer;
+  }
+
+  /* Dropdown menu */
+  .stp-nav-links{
+    position:absolute;
+    top:65px;
+    right:10px;
+    width:220px;
+    background:#1e293b;
+    flex-direction:column;
+    align-items:flex-start;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    
+    display:none; /* IMPORTANT */
+  }
+
+  /* Show when active */
+  .stp-nav-links.active{
+    display:flex;
+  }
+
+  .stp-nav-links li{
+    width:100%;
+  }
+
+  .stp-nav-links li a{
+    display:block;
+    width:100%;
+    padding:10px;
+  }
+}
+
+
 .btn-primary, .btn-secondary{
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -1455,4 +1518,233 @@ section{
 .stp-pdfsplit-item-ux77.active .stp-pdfsplit-a-ux77 {
   max-height: 500px; /* BIG FIX */
   padding: 15px;
+}
+
+
+
+
+/* =========================
+ IMAGE RESIZER CONTENT SYSTEM (UX91)
+========================= */
+
+/* Main Wrapper */
+.stp-imgresize-wrap-ux91 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-imgresize-wrap-ux91 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-imgresize-wrap-ux91 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-imgresize-wrap-ux91 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-imgresize-wrap-ux91 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-imgresize-wrap-ux91 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-imgresize-wrap-ux91 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-imgresize-wrap-ux91 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-imgresize-wrap-ux91 {
+    padding: 18px;
+  }
+
+  .stp-imgresize-wrap-ux91 p {
+    font-size: 14px;
+  }
+
+  .stp-imgresize-wrap-ux91 p strong {
+    font-size: 18px;
+  }
+}
+
+/* =========================
+ IMAGE RESIZER FAQ SYSTEM (X91)
+========================= */
+
+
+
+.stp-imgresize-wrap-x91 {
+  margin-top: 40px;
+}
+
+.stp-imgresize-title-x91 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-imgresize-faq-x91 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-imgresize-item-x91 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-imgresize-q-x91 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-imgresize-q-x91 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-imgresize-a-x91 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-imgresize-item-x91.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-imgresize-item-x91.active .stp-imgresize-a-x91 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-imgresize-item-x91.active .stp-imgresize-q-x91 span {
+  transform: rotate(180deg);
+}
+
+
+
+/* =========================
+ IMAGE RESIZER WHY SECTION (X92)
+========================= */
+
+.stp-imgresize-why-x92 {
+  margin-top: 50px;
+  padding: 30px;
+  background: #111;
+  border-radius: 16px;
+}
+
+/* Title */
+.stp-imgresize-why-title-x92 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Subtitle */
+.stp-imgresize-why-sub-x92 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.stp-imgresize-grid-x92 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.stp-imgresize-card-x92 {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.stp-imgresize-card-x92:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Icon */
+.stp-imgresize-icon-x92 {
+  font-size: 20px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+/* Text */
+.stp-imgresize-card-x92 h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.stp-imgresize-card-x92 p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-imgresize-grid-x92 {
+    grid-template-columns: 1fr;
+  }
 }
