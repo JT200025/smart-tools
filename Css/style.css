@@ -35,6 +35,105 @@ header p { font-size:1rem; margin-top:5px; color:#cbd5e1; }
 footer { padding:20px 0; background:#1e293b; text-align:center; color:#94a3b8; font-size:0.9rem; }
 footer a { color:#22c55e; }
 
+/* =========================
+   FOOTER (UX PRO LEVEL)
+========================= */
+
+.stp-footer {
+  background: #0f172a;
+  color: #e5e7eb;
+  margin-top: 60px;
+}
+
+.stp-footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.stp-footer-col h3,
+.stp-footer-col h4 {
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.stp-footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.stp-footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.stp-footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.stp-footer-col ul li a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.stp-footer-col ul li a:hover {
+  color: #00ff9d;
+}
+
+.stp-footer-bottom {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #1f2937;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .stp-footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .stp-footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .stp-footer-col {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* =========================
+          UX
+========================= */
+.home-content {
+  max-width: 100px;
+  margin: 10px auto;
+  padding: 0 15px;
+}
+
+.home-content h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.home-content p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: #fff;
+}
+
 /* TOOL PAGE LAYOUT */
 
 .tool{
@@ -1746,5 +1845,2940 @@ section{
 @media (max-width: 768px) {
   .stp-imgresize-grid-x92 {
     grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+ UNIT CONVERTER FAQ SYSTEM (U91)
+========================= */
+
+.stp-unitconv-wrap-u91 {
+  margin-top: 40px;
+}
+
+.stp-unitconv-title-u91 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-unitconv-faq-u91 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Item */
+.stp-unitconv-item-u91 {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0c0808;
+}
+
+/* Question */
+.stp-unitconv-q-u91 {
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+/* Answer */
+.stp-unitconv-a-u91 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  color: #ccc;
+}
+
+/* Active */
+.stp-unitconv-item-u91.active {
+  border: 2px solid #a855f7;
+}
+
+.stp-unitconv-item-u91.active .stp-unitconv-a-u91 {
+  max-height: 500px;
+  padding: 15px;
+}
+
+
+
+/* =========================
+ UNIT CONVERTER CONTENT SYSTEM (U91 FIXED)
+========================= */
+
+/* Main Wrapper */
+.stp-unitconv-wrap-u91 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-unitconv-wrap-u91 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-unitconv-wrap-u91 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Line spacing fix */
+.stp-unitconv-wrap-u91 p br {
+  margin-bottom: 5px;
+}
+
+/* Remove extra gap after headings */
+.stp-unitconv-wrap-u91 p strong + br {
+  display: none;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-unitconv-wrap-u91 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-unitconv-wrap-u91 {
+    padding: 18px;
+  }
+
+  .stp-unitconv-wrap-u91 p {
+    font-size: 14px;
+  }
+
+  .stp-unitconv-wrap-u91 p strong {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+ UNIT CONVERTER WHY SECTION (X94)
+========================= */
+
+
+.stp-unitconv-why-x94 {
+  margin-top: 50px;
+  padding: 30px;
+  background: #111;
+  border-radius: 16px;
+}
+
+/* Title */
+.stp-unitconv-why-title-x94 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Subtitle */
+.stp-unitconv-why-sub-x94 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.stp-unitconv-grid-x94 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.stp-unitconv-card-x94 {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.stp-unitconv-card-x94:hover {
+ transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Icon */
+.stp-unitconv-icon-x94 {
+  font-size: 20px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+/* Text */
+.stp-unitconv-card-x94 h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.stp-unitconv-card-x94 p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-unitconv-grid-x94 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+ PASSWORD GENERATOR CONTENT SYSTEM (UX95)
+========================= */
+
+/* Main Wrapper */
+.stp-pwgen-wrap-ux95 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-pwgen-wrap-ux95 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-pwgen-wrap-ux95 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-pwgen-wrap-ux95 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-pwgen-wrap-ux95 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-pwgen-wrap-ux95 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-pwgen-wrap-ux95 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-pwgen-wrap-ux95 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-pwgen-wrap-ux95 {
+    padding: 18px;
+  }
+
+  .stp-pwgen-wrap-ux95 p {
+    font-size: 14px;
+  }
+
+  .stp-pwgen-wrap-ux95 p strong {
+    font-size: 18px;
+  }
+}
+
+
+
+
+/* =========================
+ PASSWORD GENERATOR WHY SECTION (X95)
+========================= */
+
+.stp-pwgen-why-x95 {
+  margin-top: 50px;
+  padding: 30px;
+  background: #111;
+  border-radius: 16px;
+}
+
+/* Title */
+.stp-pwgen-why-title-x95 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Subtitle */
+.stp-pwgen-why-sub-x95 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.stp-pwgen-grid-x95 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.stp-pwgen-card-x95 {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.stp-pwgen-card-x95:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Icon */
+.stp-pwgen-icon-x95 {
+  font-size: 20px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+/* Text */
+.stp-pwgen-card-x95 h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.stp-pwgen-card-x95 p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-pwgen-grid-x95 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* =========================
+Password Generator FAQ
+========================= */
+
+.stp-pwgen-wrap-x96 {
+  margin-top: 40px;
+}
+
+.stp-pwgen-title-x96 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-pwgen-faq-x96 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-pwgen-item-x96 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-pwgen-q-x96 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-pwgen-q-x96 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-pwgen-a-x96 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-pwgen-item-x96.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-pwgen-item-x96.active .stp-pwgen-a-x96 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-pwgen-item-x96.active .stp-pwgen-q-x96 span {
+  transform: rotate(180deg);
+}
+
+
+
+/* =========================
+QR Code Generator
+========================= */
+
+/* Main Wrapper */
+.stp-qrcode-wrap-ux98 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-qrcode-wrap-ux98 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-qrcode-wrap-ux98 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-qrcode-wrap-ux98 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-qrcode-wrap-ux98 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-qrcode-wrap-ux98 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-qrcode-wrap-ux98 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-qrcode-wrap-ux98 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-qrcode-wrap-ux98 {
+    padding: 18px;
+  }
+
+  .stp-qrcode-wrap-ux98 p {
+    font-size: 14px;
+  }
+
+  .stp-qrcode-wrap-ux98 p strong {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+ QR CODE GENERATOR WHY SECTION (X96)
+========================= */
+
+.stp-qrcode-why-x96 {
+  margin-top: 50px;
+  padding: 30px;
+  background: #111;
+  border-radius: 16px;
+}
+
+/* Title */
+.stp-qrcode-why-title-x96 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Subtitle */
+.stp-qrcode-why-sub-x96 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.stp-qrcode-grid-x96 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.stp-qrcode-card-x96 {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.stp-qrcode-card-x96:hover {
+ transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Icon */
+.stp-qrcode-icon-x96 {
+  font-size: 20px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+/* Text */
+.stp-qrcode-card-x96 h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.stp-qrcode-card-x96 p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-qrcode-grid-x96 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+ QR CODE FAQ SYSTEM (X97)
+========================= */
+
+.stp-qrcode-wrap-x97 {
+  margin-top: 40px;
+}
+
+.stp-qrcode-title-x97 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-qrcode-faq-x97 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-qrcode-item-x97 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-qrcode-q-x97 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-qrcode-q-x97 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-qrcode-a-x97 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-qrcode-item-x97.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-qrcode-item-x97.active .stp-qrcode-a-x97 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-qrcode-item-x97.active .stp-qrcode-q-x97 span {
+  transform: rotate(180deg);
+}
+
+/* =========================
+ IMAGE COMPRESSOR CONTENT SYSTEM (UX97)
+========================= */
+
+/* Main Wrapper */
+.stp-imgcompress-wrap-ux97 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-imgcompress-wrap-ux97 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-imgcompress-wrap-ux97 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-imgcompress-wrap-ux97 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-imgcompress-wrap-ux97 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-imgcompress-wrap-ux97 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-imgcompress-wrap-ux97 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-imgcompress-wrap-ux97 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-imgcompress-wrap-ux97 {
+    padding: 18px;
+  }
+
+  .stp-imgcompress-wrap-ux97 p {
+    font-size: 14px;
+  }
+
+  .stp-imgcompress-wrap-ux97 p strong {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+ IMAGE COMPRESSOR WHY SECTION (UXA1)
+========================= */
+
+.stp-imgcompress-why-uxa1 {
+  margin-top: 50px;
+  padding: 30px;
+  background: #111;
+  border-radius: 16px;
+}
+
+/* Title */
+.stp-imgcompress-why-title-uxa1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Subtitle */
+.stp-imgcompress-why-sub-uxa1 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.stp-imgcompress-grid-uxa1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.stp-imgcompress-card-uxa1 {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.stp-imgcompress-card-uxa1:hover {
+ transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Icon */
+.stp-imgcompress-icon-uxa1 {
+  font-size: 20px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+/* Text */
+.stp-imgcompress-card-uxa1 h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.stp-imgcompress-card-uxa1 p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-imgcompress-grid-uxa1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+ IMAGE COMPRESSOR FAQ SYSTEM (UXA1)
+========================= */
+
+.stp-imgcompress-wrap-uxA1 {
+  margin-top: 40px;
+}
+
+.stp-imgcompress-title-uxA1 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-imgcompress-faq-uxA1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-imgcompress-item-uxA1 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-imgcompress-q-uxA1 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-imgcompress-q-uxA1 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-imgcompress-a-uxA1 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-imgcompress-item-uxA1.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-imgcompress-item-uxA1.active .stp-imgcompress-a-uxA1 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-imgcompress-item-uxA1.active .stp-imgcompress-q-uxA1 span {
+  transform: rotate(180deg);
+}
+
+
+/* =========================
+ WORD COUNTER CONTENT SYSTEM (UXB1)
+========================= */
+
+/* Main Wrapper */
+.stp-wordcount-wrap-uxB1 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-wordcount-wrap-uxB1 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-wordcount-wrap-uxB1 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-wordcount-wrap-uxB1 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-wordcount-wrap-uxB1 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-wordcount-wrap-uxB1 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-wordcount-wrap-uxB1 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-wordcount-wrap-uxB1 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-wordcount-wrap-uxB1 {
+    padding: 18px;
+  }
+
+  .stp-wordcount-wrap-uxB1 p {
+    font-size: 14px;
+  }
+
+  .stp-wordcount-wrap-uxB1 p strong {
+    font-size: 18px;
+  }
+}
+
+
+
+/* =========================
+ WORD COUNTER WHY SECTION (UXB1)
+========================= */
+
+.stp-wordcount-why-uxB2 {
+  margin-top: 50px;
+  padding: 30px;
+  background: #111;
+  border-radius: 16px;
+}
+
+/* Title */
+.stp-wordcount-why-title-uxB2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Subtitle */
+.stp-wordcount-why-sub-uxB2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.stp-wordcount-grid-uxB2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.stp-wordcount-card-uxB2 {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.stp-wordcount-card-uxB2:hover {
+ transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Icon */
+.stp-wordcount-icon-uxB2 {
+  font-size: 20px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+/* Text */
+.stp-wordcount-card-uxB2 h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.stp-wordcount-card-uxB2 p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-wordcount-grid-uxB2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+ IMAGE COMPRESSOR FAQ SYSTEM (UXA2)
+========================= */
+
+.stp-imgcompress-wrap-uxa2 {
+  margin-top: 40px;
+}
+
+.stp-imgcompress-title-uxa2 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-imgcompress-faq-uxa2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-imgcompress-item-uxa2 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-imgcompress-q-uxa2 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-imgcompress-q-uxa2 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-imgcompress-a-uxa2 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-imgcompress-item-uxa2.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-imgcompress-item-uxa2.active .stp-imgcompress-a-uxa2 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-imgcompress-item-uxa2.active .stp-imgcompress-q-uxa2 span {
+  transform: rotate(180deg);
+}
+
+
+/* =========================
+ TEXT CASE CONVERTER CONTENT SYSTEM (UXC1)
+========================= */
+
+/* Main Wrapper */
+.stp-textcase-wrap-uxC1 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-textcase-wrap-uxC1 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-textcase-wrap-uxC1 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-textcase-wrap-uxC1 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-textcase-wrap-uxC1 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-textcase-wrap-uxC1 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-textcase-wrap-uxC1 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-textcase-wrap-uxC1 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-textcase-wrap-uxC1 {
+    padding: 18px;
+  }
+
+  .stp-textcase-wrap-uxC1 p {
+    font-size: 14px;
+  }
+
+  .stp-textcase-wrap-uxC1 p strong {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+ TEXT CASE CONVERTER FAQ SYSTEM (XC1)
+========================= */
+
+.stp-textcase-wrap-xc1 {
+  margin-top: 40px;
+}
+
+.stp-textcase-title-xc1 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-textcase-faq-xc1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-textcase-item-xc1 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-textcase-q-xc1 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-textcase-q-xc1 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-textcase-a-xc1 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-textcase-item-xc1.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-textcase-item-xc1.active .stp-textcase-a-xc1 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-textcase-item-xc1.active .stp-textcase-q-xc1 span {
+  transform: rotate(180deg);
+}
+
+
+/* =========================
+ RANDOM NUMBER CONTENT SYSTEM (UXD1)
+========================= */
+
+/* Main Wrapper */
+.stp-randomnum-wrap-uxD1 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-randomnum-wrap-uxD1 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-randomnum-wrap-uxD1 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-randomnum-wrap-uxD1 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-randomnum-wrap-uxD1 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-randomnum-wrap-uxD1 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-randomnum-wrap-uxD1 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-randomnum-wrap-uxD1 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-randomnum-wrap-uxD1 {
+    padding: 18px;
+  }
+
+  .stp-randomnum-wrap-uxD1 p {
+    font-size: 14px;
+  }
+
+  .stp-randomnum-wrap-uxD1 p strong {
+    font-size: 18px;
+  }
+}
+
+/* =========================
+ RANDOM NUMBER FAQ SYSTEM (XD1)
+========================= */
+
+.stp-randomnum-wrap-xd1 {
+  margin-top: 40px;
+}
+
+.stp-randomnum-title-xd1 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-randomnum-faq-xd1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-randomnum-item-xd1 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-randomnum-q-xd1 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-randomnum-q-xd1 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-randomnum-a-xd1 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-randomnum-item-xd1.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-randomnum-item-xd1.active .stp-randomnum-a-xd1 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-randomnum-item-xd1.active .stp-randomnum-q-xd1 span {
+  transform: rotate(180deg);
+}
+
+
+/* =========================
+ COLOR PALETTE CONTENT SYSTEM (UXE1)
+========================= */
+
+/* Main Wrapper */
+.stp-colorpalette-wrap-uxE1 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-colorpalette-wrap-uxE1 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-colorpalette-wrap-uxE1 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-colorpalette-wrap-uxE1 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-colorpalette-wrap-uxE1 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-colorpalette-wrap-uxE1 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-colorpalette-wrap-uxE1 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-colorpalette-wrap-uxE1 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-colorpalette-wrap-uxE1 {
+    padding: 18px;
+  }
+
+  .stp-colorpalette-wrap-uxE1 p {
+    font-size: 14px;
+  }
+
+  .stp-colorpalette-wrap-uxE1 p strong {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+ COLOR PALETTE FAQ SYSTEM (XE1)
+========================= */
+
+.stp-colorpalette-wrap-xe1 {
+  margin-top: 40px;
+}
+
+.stp-colorpalette-title-xe1 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-colorpalette-faq-xe1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-colorpalette-item-xe1 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-colorpalette-q-xe1 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-colorpalette-q-xe1 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-colorpalette-a-xe1 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-colorpalette-item-xe1.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-colorpalette-item-xe1.active .stp-colorpalette-a-xe1 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-colorpalette-item-xe1.active .stp-colorpalette-q-xe1 span {
+  transform: rotate(180deg);
+}
+
+
+/* =========================
+ JSON FORMATTER CONTENT SYSTEM (UXF1)
+========================= */
+
+/* Main Wrapper */
+.stp-jsonformat-wrap-uxF1 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-jsonformat-wrap-uxF1 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-jsonformat-wrap-uxF1 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-jsonformat-wrap-uxF1 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-jsonformat-wrap-uxF1 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-jsonformat-wrap-uxF1 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-jsonformat-wrap-uxF1 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-jsonformat-wrap-uxF1 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-jsonformat-wrap-uxF1 {
+    padding: 18px;
+  }
+
+  .stp-jsonformat-wrap-uxF1 p {
+    font-size: 14px;
+  }
+
+  .stp-jsonformat-wrap-uxF1 p strong {
+    font-size: 18px;
+  }
+}
+
+/* =========================
+ JSON FORMATTER WHY SECTION (UXF2)
+========================= */
+
+.stp-jsonformat-why-uxf2 {
+  margin-top: 50px;
+  padding: 30px;
+  background: #111;
+  border-radius: 16px;
+}
+
+/* Title */
+.stp-jsonformat-why-title-uxf2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Subtitle */
+.stp-jsonformat-why-sub-uxf2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.stp-jsonformat-grid-uxf2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.stp-jsonformat-card-uxf2 {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.stp-jsonformat-card-uxf2:hover {
+ transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Icon */
+.stp-jsonformat-icon-uxf2 {
+  font-size: 20px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+/* Text */
+.stp-jsonformat-card-uxf2 h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.stp-jsonformat-card-uxf2 p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-jsonformat-grid-uxf2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+ JSON FORMATTER FAQ SYSTEM (UXF3)
+========================= */
+
+.stp-jsonformat-wrap-uxf3 {
+  margin-top: 40px;
+}
+
+.stp-jsonformat-title-uxf3 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-jsonformat-faq-uxf3 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-jsonformat-item-uxf3 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-jsonformat-q-uxf3 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-jsonformat-q-uxf3 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-jsonformat-a-uxf3 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-jsonformat-item-uxf3.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-jsonformat-item-uxf3.active .stp-jsonformat-a-uxf3 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-jsonformat-item-uxf3.active .stp-jsonformat-q-uxf3 span {
+  transform: rotate(180deg);
+}
+
+
+/* =========================
+ UUID GENERATOR CONTENT SYSTEM (UXG1)
+========================= */
+
+/* Main Wrapper */
+.stp-uuidgen-wrap-uxG1 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-uuidgen-wrap-uxG1 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-uuidgen-wrap-uxG1 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-uuidgen-wrap-uxG1 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-uuidgen-wrap-uxG1 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-uuidgen-wrap-uxG1 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-uuidgen-wrap-uxG1 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-uuidgen-wrap-uxG1 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-uuidgen-wrap-uxG1 {
+    padding: 18px;
+  }
+
+  .stp-uuidgen-wrap-uxG1 p {
+    font-size: 14px;
+  }
+
+  .stp-uuidgen-wrap-uxG1 p strong {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+ UNIT CONVERTER WHY SECTION (X94)
+========================= */
+
+
+.stp-uuidgen-why-xG2 {
+  margin-top: 50px;
+  padding: 30px;
+  background: #111;
+  border-radius: 16px;
+}
+
+/* Title */
+.stp-uuidgen-why-title-xG2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Subtitle */
+.stp-uuidgen-why-sub-xG2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.stp-uuidgen-grid-xG2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.stp-uuidgen-card-xG2 {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.stp-uuidgen-card-xG2:hover {
+ transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Icon */
+.stp-uuidgen-icon-xG2 {
+  font-size: 20px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+/* Text */
+.stp-uuidgen-card-xG2 h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.stp-uuidgen-card-xG2 p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-uuidgen-grid-xG2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+ UUID GENERATOR FAQ SYSTEM (XG1)
+========================= */
+
+.stp-uuidgen-wrap-xG1 {
+  margin-top: 40px;
+}
+
+.stp-uuidgen-title-xG1 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-uuidgen-faq-xG1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-uuidgen-item-xG1 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-uuidgen-q-xG1 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-uuidgen-q-xG1 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-uuidgen-a-xG1 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-uuidgen-item-xG1.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-uuidgen-item-xG1.active .stp-uuidgen-a-xG1 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-uuidgen-item-xG1.active .stp-uuidgen-q-xG1 span {
+  transform: rotate(180deg);
+}
+
+
+/* =========================
+ IMAGE RESIZER CONTENT SYSTEM (UX91)
+========================= */
+
+/* Main Wrapper */
+.stp-timezone-wrap-uxH1 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-timezone-wrap-uxH1 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-timezone-wrap-uxH1 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-timezone-wrap-uxH1 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-timezone-wrap-uxH1 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-timezone-wrap-uxH1 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-timezone-wrap-uxH1 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-timezone-wrap-uxH1 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-timezone-wrap-uxH1 {
+    padding: 18px;
+  }
+
+  .stp-timezone-wrap-uxH1 p {
+    font-size: 14px;
+  }
+
+  .stp-timezone-wrap-uxH1 p strong {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+ TIME ZONE CONVERTER FAQ SYSTEM (XH1)
+========================= */
+
+.stp-timezone-wrap-xH1 {
+  margin-top: 40px;
+}
+
+.stp-timezone-title-xH1 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-timezone-faq-xH1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-timezone-item-xH1 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-timezone-q-xH1 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-timezone-q-xH1 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-timezone-a-xH1 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-timezone-item-xH1.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-timezone-item-xH1.active .stp-timezone-a-xH1 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-timezone-item-xH1.active .stp-timezone-q-xH1 span {
+  transform: rotate(180deg);
+}
+
+/* =========================
+ CURRENCY CONVERTER CONTENT SYSTEM (UXJ1)
+========================= */
+
+/* Main Wrapper */
+.stp-currency-wrap-uxJ1 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-currency-wrap-uxJ1 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-currency-wrap-uxJ1 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-currency-wrap-uxJ1 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-currency-wrap-uxJ1 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-currency-wrap-uxJ1 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-currency-wrap-uxJ1 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-currency-wrap-uxJ1 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-currency-wrap-uxJ1 {
+    padding: 18px;
+  }
+
+  .stp-currency-wrap-uxJ1 p {
+    font-size: 14px;
+  }
+
+  .stp-currency-wrap-uxJ1 p strong {
+    font-size: 18px;
+  }
+}
+
+/* =========================
+ CURRENCY CONVERTER FAQ SYSTEM (XJ1)
+========================= */
+
+.stp-currency-wrap-xJ1 {
+  margin-top: 40px;
+}
+
+.stp-currency-title-xJ1 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-currency-faq-xJ1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-currency-item-xJ1 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-currency-q-xJ1 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-currency-q-xJ1 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-currency-a-xJ1 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-currency-item-xJ1.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-currency-item-xJ1.active .stp-currency-a-xJ1 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-currency-item-xJ1.active .stp-currency-q-xJ1 span {
+  transform: rotate(180deg);
+}
+
+/* =========================
+ IMAGE FORMAT CONVERTER CONTENT SYSTEM (UXK1)
+========================= */
+
+/* Main Wrapper */
+.stp-imgformat-wrap-uxK1 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-imgformat-wrap-uxK1 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-imgformat-wrap-uxK1 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-imgformat-wrap-uxK1 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-imgformat-wrap-uxK1 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-imgformat-wrap-uxK1 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-imgformat-wrap-uxK1 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-imgformat-wrap-uxK1 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-imgformat-wrap-uxK1 {
+    padding: 18px;
+  }
+
+  .stp-imgformat-wrap-uxK1 p {
+    font-size: 14px;
+  }
+
+  .stp-imgformat-wrap-uxK1 p strong {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+ IMAGE FORMAT CONVERTER WHY SECTION (XK2)
+========================= */
+
+.stp-imgformat-why-xK2 {
+  margin-top: 50px;
+  padding: 30px;
+  background: #111;
+  border-radius: 16px;
+}
+
+/* Title */
+.stp-imgformat-why-title-xK2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Subtitle */
+.stp-imgformat-why-sub-xK2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.stp-imgformat-grid-xK2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.stp-imgformat-card-xK2 {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.stp-imgformat-card-xK2:hover {
+ transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Icon */
+.stp-imgformat-icon-xK2 {
+  font-size: 20px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+/* Text */
+.stp-imgformat-card-xK2 h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.stp-imgformat-card-xK2 p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-imgformat-grid-xK2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+ IMAGE FORMAT CONVERTER FAQ SYSTEM (XK3)
+========================= */
+
+.stp-imgformat-wrap-xK3 {
+  margin-top: 40px;
+}
+
+.stp-imgformat-title-xK3 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-imgformat-faq-xK3 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-imgformat-item-xK3 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-imgformat-q-xK3 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-imgformat-q-xK3 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-imgformat-a-xK3 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-imgformat-item-xK3.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-imgformat-item-xK3.active .stp-imgformat-a-xK3 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-imgformat-item-xK3.active .stp-imgformat-q-xK3 span {
+  transform: rotate(180deg);
+}
+
+/* =========================
+ YOUTUBE THUMBNAIL DOWNLOADER CONTENT SYSTEM (UXL1)
+========================= */
+
+/* Main Wrapper */
+.stp-ytthumb-wrap-uxL1 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-ytthumb-wrap-uxL1 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-ytthumb-wrap-uxL1 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-ytthumb-wrap-uxL1 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-ytthumb-wrap-uxL1 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-ytthumb-wrap-uxL1 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-ytthumb-wrap-uxL1 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-ytthumb-wrap-uxL1 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-ytthumb-wrap-uxL1 {
+    padding: 18px;
+  }
+
+  .stp-ytthumb-wrap-uxL1 p {
+    font-size: 14px;
+  }
+
+  .stp-ytthumb-wrap-uxL1 p strong {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+ YOUTUBE THUMBNAIL FAQ SYSTEM (XL1)
+========================= */
+
+.stp-ytthumb-wrap-xL1 {
+  margin-top: 40px;
+}
+
+.stp-ytthumb-title-xL1 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-ytthumb-faq-xL1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-ytthumb-item-xL1 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-ytthumb-q-xL1 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-ytthumb-q-xL1 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-ytthumb-a-xL1 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-ytthumb-item-xL1.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-ytthumb-item-xL1.active .stp-ytthumb-a-xL1 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-ytthumb-item-xL1.active .stp-ytthumb-q-xL1 span {
+  transform: rotate(180deg);
+}
+
+/* =========================
+ IMAGE KB COMPRESSOR CONTENT SYSTEM (UXM1)
+========================= */
+
+/* Main Wrapper */
+.stp-imgkb-wrap-uxM1 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-imgkb-wrap-uxM1 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-imgkb-wrap-uxM1 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-imgkb-wrap-uxM1 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-imgkb-wrap-uxM1 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-imgkb-wrap-uxM1 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-imgkb-wrap-uxM1 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-imgkb-wrap-uxM1 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-imgkb-wrap-uxM1 {
+    padding: 18px;
+  }
+
+  .stp-imgkb-wrap-uxM1 p {
+    font-size: 14px;
+  }
+
+  .stp-imgkb-wrap-uxM1 p strong {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+ IMAGE KB COMPRESSOR WHY SECTION (XM2)
+========================= */
+
+.stp-imgkb-why-xM2 {
+  margin-top: 50px;
+  padding: 30px;
+  background: #111;
+  border-radius: 16px;
+}
+
+/* Title */
+.stp-imgkb-why-title-xM2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Subtitle */
+.stp-imgkb-why-sub-xM2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.stp-imgkb-grid-xM2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.stp-imgkb-card-xM2 {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.stp-imgkb-card-xM2:hover {
+ transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Icon */
+.stp-imgkb-icon-xM2 {
+  font-size: 20px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+/* Text */
+.stp-imgkb-card-xM2 h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.stp-imgkb-card-xM2 p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-imgkb-grid-xM2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+ IMAGE KB COMPRESSOR FAQ SYSTEM (XM1)
+========================= */
+
+.stp-imgkb-wrap-xM1 {
+  margin-top: 40px;
+}
+
+.stp-imgkb-title-xM1 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-imgkb-faq-xM1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-imgkb-item-xM1 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-imgkb-q-xM1 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-imgkb-q-xM1 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-imgkb-a-xM1 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-imgkb-item-xM1.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-imgkb-item-xM1.active .stp-imgkb-a-xM1 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-imgkb-item-xM1.active .stp-imgkb-q-xM1 span {
+  transform: rotate(180deg);
+}
+
+
+/* =========================
+ ICON GENERATOR CONTENT SYSTEM (UXP1)
+========================= */
+
+/* Main Wrapper */
+.stp-icongen-wrap-uxP1 {
+  margin-top: 40px;
+  background: #0c0808;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* Headings */
+.stp-icongen-wrap-uxP1 p strong {
+  display: block;
+  font-size: 20px;
+  color: #00ff9d;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+.stp-icongen-wrap-uxP1 p {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Highlight sections (like Why Choose list) */
+.stp-icongen-wrap-uxP1 p br {
+  margin-bottom: 5px;
+}
+
+/* Emoji Feature Blocks */
+.stp-icongen-wrap-uxP1 p strong + br {
+  display: none;
+}
+
+/* Feature lines (emoji + title) */
+.stp-icongen-wrap-uxP1 p:has(strong):not(:first-child) {
+  margin-top: 10px;
+}
+
+/* Step Titles (1,2,3...) */
+.stp-icongen-wrap-uxP1 p strong:first-child {
+  color: #00ff9d;
+}
+
+/* Better spacing for steps */
+.stp-icongen-wrap-uxP1 p strong + br + text {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-icongen-wrap-uxP1 {
+    padding: 18px;
+  }
+
+  .stp-icongen-wrap-uxP1 p {
+    font-size: 14px;
+  }
+
+  .stp-icongen-wrap-uxP1 p strong {
+    font-size: 18px;
   }
 }
