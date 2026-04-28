@@ -4782,3 +4782,156 @@ QR Code Generator
     font-size: 18px;
   }
 }
+
+/* =========================
+ ICON GENERATOR WHY SECTION (XP2)
+========================= */
+
+
+.stp-icongen-why-xP2 {
+  margin-top: 50px;
+  padding: 30px;
+  background: #111;
+  border-radius: 16px;
+}
+
+/* Title */
+.stp-icongen-why-title-xP2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Subtitle */
+.stp-icongen-why-sub-xP2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.stp-icongen-grid-xP2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.stp-icongen-card-xP2 {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.stp-icongen-card-xP2:hover {
+ transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Icon */
+.stp-icongen-icon-xP2 {
+  font-size: 20px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+/* Text */
+.stp-icongen-card-xP2 h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.stp-icongen-card-xP2 p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stp-icongen-grid-xP2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+ ICON GENERATOR FAQ SYSTEM (XP1)
+========================= */
+
+.stp-icongen-wrap-xP1 {
+  margin-top: 40px;
+}
+
+.stp-icongen-title-xP1 {
+  color: #00ff9d;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.stp-icongen-faq-xP1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.stp-icongen-item-xP1 {
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c0808;
+  transition: all 0.3s ease;
+}
+
+/* Question */
+.stp-icongen-q-xP1 {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* Arrow */
+.stp-icongen-q-xP1 span {
+  transition: transform 0.3s ease;
+}
+
+/* Answer */
+.stp-icongen-a-xP1 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Active State */
+.stp-icongen-item-xP1.active {
+  border: 2px solid #a855f7;
+}
+
+/* Open Answer */
+.stp-icongen-item-xP1.active .stp-icongen-a-xP1 {
+  max-height: 300px;
+  padding: 15px 16px;
+}
+
+/* Rotate Arrow */
+.stp-icongen-item-xP1.active .stp-icongen-q-xP1 span {
+  transform: rotate(180deg);
+}
