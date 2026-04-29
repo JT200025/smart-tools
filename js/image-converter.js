@@ -1,51 +1,65 @@
-function convertImage(){
+function convertImage() {
 
-const fileInput = document.getElementById("imageInput");
-const format = document.getElementById("formatSelect").value;
-const canvas = document.getElementById("canvas");
-const status = document.getElementById("status");
-const downloadLink = document.getElementById("downloadLink");
+  const fileInput = document.getElementById("imageInput");
+  const format = document.getElementById("formatSelect").value;
+  const canvas = document.getElementById("canvas");
+  const status = document.getElementById("status");
+  const downloadLink = document.getElementById("downloadLink");
 
-if(fileInput.files.length === 0){
-status.innerText = "Please upload an image.";
-return;
-}
+  if (!fileInput.files.length) {
+    status.innerText = "Please upload an image.";
+    return;
+  }
 
-const file = fileInput.files[0];
+  const file = fileInput.files[0];
+  const reader = new FileReader();
 
-const reader = new FileReader();
+  reader.onload = function (e) {
 
-reader.onload = function(e){
+    const img = new Image();
 
-const img = new Image();
+    img.onload = function () {
 
-img.onload = function(){
+      canvas.width = img.width;
+      canvas.height = img.height;
 
-canvas.width = img.width;
-canvas.height = img.height;
+      const ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0);
 
-const ctx = canvas.getContext("2d");
+      // ✅ SHOW CANVAS (FIX)
+      canvas.style.display = "block";
 
-ctx.drawImage(img,0,0);
+      let converted;
 
-const converted = canvas.toDataURL(format);
+      try {
+        converted = canvas.toDataURL(format, 0.9);
 
-downloadLink.href = converted;
+        if (format === "image/webp" && !converted.startsWith("data:image/webp")) {
+          throw new Error("WEBP not supported");
+        }
 
-if(format === "image/png") downloadLink.download = "converted-image.png";
-if(format === "image/jpeg") downloadLink.download = "converted-image.jpg";
-if(format === "image/webp") downloadLink.download = "converted-image.webp";
+      } catch (err) {
+        status.innerText = "WEBP not supported in this browser. Using PNG instead.";
+        converted = canvas.toDataURL("image/png");
+      }
 
-downloadLink.style.display = "inline-block";
+      downloadLink.href = converted;
 
-status.innerText = "Image converted successfully.";
+      if (format === "image/png") downloadLink.download = "converted-image.png";
+      else if (format === "image/jpeg") downloadLink.download = "converted-image.jpg";
+      else if (format === "image/webp") downloadLink.download = "converted-image.webp";
 
-};
+      downloadLink.style.display = "inline-block";
 
-img.src = e.target.result;
+      status.innerText = "Image converted successfully.";
+    };
 
-};
+    img.onerror = function () {
+      status.innerText = "Error loading image.";
+    };
 
-reader.readAsDataURL(file);
+    img.src = e.target.result;
+  };
 
+  reader.readAsDataURL(file);
 }
