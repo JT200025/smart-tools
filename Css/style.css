@@ -4964,3 +4964,11 @@ QR Code Generator
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
+
+
+#canvas {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
