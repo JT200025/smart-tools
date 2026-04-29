@@ -1,57 +1,62 @@
-async function convertPDF(){
+async function convertPDF() {
 
-const fileInput = document.getElementById("pdfInput");
-const status = document.getElementById("status");
-const output = document.getElementById("imageOutput");
+  const input = document.getElementById("pdfInput");
+  const status = document.getElementById("status");
+  const output = document.getElementById("imageOutput");
 
-output.innerHTML = "";
+  output.innerHTML = "";
 
-if(fileInput.files.length === 0){
-status.innerText = "Please upload a PDF file.";
-return;
-}
+  if (!input.files.length) {
+    status.innerText = "Please upload a PDF file.";
+    return;
+  }
 
-status.innerText = "Converting PDF...";
+  status.innerText = "Converting...";
 
-const file = fileInput.files[0];
-const arrayBuffer = await file.arrayBuffer();
+  const file = input.files[0];
+  const arrayBuffer = await file.arrayBuffer();
 
-const pdf = await pdfjsLib.getDocument({data:arrayBuffer}).promise;
+  const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
 
-for(let pageNum=1; pageNum<=pdf.numPages; pageNum++){
+  for (let i = 1; i <= pdf.numPages; i++) {
 
-const page = await pdf.getPage(pageNum);
+    const page = await pdf.getPage(i);
 
-const viewport = page.getViewport({scale:2});
+    const viewport = page.getViewport({ scale: 1.5 });
 
-const canvas = document.createElement("canvas");
-const context = canvas.getContext("2d");
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
 
-canvas.height = viewport.height;
-canvas.width = viewport.width;
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
 
-await page.render({
-canvasContext:context,
-viewport:viewport
-}).promise;
+    await page.render({
+      canvasContext: context,
+      viewport: viewport
+    }).promise;
 
-const imgData = canvas.toDataURL("image/jpeg");
+    const imageURL = canvas.toDataURL("image/jpeg", 0.9);
 
-const link = document.createElement("a");
-link.href = imgData;
-link.download = "page-"+pageNum+".jpg";
-link.innerText = "Download Page "+pageNum;
+    // Create image
+    const img = document.createElement("img");
+    img.src = imageURL;
 
-const img = document.createElement("img");
-img.src = imgData;
-img.style.width = "100%";
-img.style.marginTop = "20px";
+    // Create download button
+    const link = document.createElement("a");
+    link.href = imageURL;
+    link.download = `page-${i}.jpg`;
+    link.className = "download-btn";
+    link.innerText = "Download Image";
 
-output.appendChild(img);
-output.appendChild(link);
+    // Wrap
+    const box = document.createElement("div");
+    box.className = "image-box";
 
-}
+    box.appendChild(img);
+    box.appendChild(link);
 
-status.innerText = "Conversion complete.";
+    output.appendChild(box);
+  }
 
+  status.innerText = "Conversion completed!";
 }
