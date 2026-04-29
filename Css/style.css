@@ -4935,3 +4935,32 @@ QR Code Generator
 .stp-icongen-item-xP1.active .stp-icongen-q-xP1 span {
   transform: rotate(180deg);
 }
+
+.download-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00ff9d, #00c8ff);
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 255, 157, 0.25);
+}
+
+.download-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 255, 157, 0.4);
+}
+
+.image-box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.image-box img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
