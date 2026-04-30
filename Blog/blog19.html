@@ -15,16 +15,29 @@
 
 <style>
 
+/* BODY */
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* =========================
+   BODY
+========================= */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.7;
-    margin: 0;
     background: #eef2f7;
     color: #333;
 }
 
-/* CONTAINER */
+/* =========================
+   CONTAINER (MAIN CONTENT)
+========================= */
 .container {
     max-width: 900px;
     margin: 40px auto;
@@ -34,39 +47,44 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
 }
 
-/* HEADER */
-
-
+/* =========================
+   HEADER
+========================= */
 header {
-            background: #0d6efd;
-            color: white;
-            padding: 2px 10px;
-            text-align: center;
-        }
+    background: #0d6efd;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
 
-        header h1 {
-            margin: 0;
-        }
+header h1 {
+    margin: 0;
+}
 
-        nav {
-            background: #ffffff;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+/* =========================
+   NAVBAR
+========================= */
+nav {
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
 
-        nav a:hover {
-            color: #0d6efd;
-        }
+nav a:hover {
+    color: #0d6efd;
+}
 
-
+/* =========================
+   ARTICLE HEADER
+========================= */
 .article-header {
     margin-bottom: 25px;
 }
@@ -82,40 +100,28 @@ header {
     font-size: 14px;
 }
 
-/* HEADINGS */
+/* =========================
+   HEADINGS & TEXT
+========================= */
 h2 {
     margin-top: 30px;
     font-size: 24px;
     color: #0d6efd;
 }
 
-/* TEXT */
 p {
     font-size: 16px;
     color: #444;
+    margin-bottom: 10px;
 }
 
-/* BUTTON */
-.button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 18px;
-    background: linear-gradient(135deg, #0d6efd, #4a90ff);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3);
-}
+/* =========================
+   BUTTONS
+========================= */
+.button,
 .button-back {
     display: inline-block;
     margin-top: 15px;
-    margin-left: 45px;
     padding: 12px 18px;
     background: linear-gradient(135deg, #0d6efd, #4a90ff);
     color: #fff;
@@ -125,12 +131,19 @@ p {
     transition: 0.3s;
 }
 
+.button-back {
+    margin-left: 10px;
+}
+
+.button:hover,
 .button-back:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3);
 }
 
-/* HIGHLIGHT BOX */
+/* =========================
+   HIGHLIGHT BOX
+========================= */
 .highlight-box {
     background: #f1f6ff;
     border-left: 4px solid #0d6efd;
@@ -139,7 +152,9 @@ p {
     border-radius: 6px;
 }
 
-/* STEP BOX */
+/* =========================
+   STEP BOX
+========================= */
 .step-box {
     background: #f9fafb;
     padding: 12px 15px;
@@ -148,19 +163,9 @@ p {
     border: 1px solid #eee;
 }
 
-footer {
-            margin-top: 40px;
-            padding:5px;
-            text-align: center;
-            background: #ffffff;
-            font-size: 14px;
-            color: #666;
-        }
-
-
-
-
-/* TOOL CARDS */
+/* =========================
+   TOOLS GRID
+========================= */
 .tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -178,8 +183,6 @@ footer {
     box-shadow: 0 6px 20px rgba(0,0,0,0.05);
     transition: 0.3s;
     border: 1px solid #eee;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .tool-card:hover {
@@ -203,6 +206,100 @@ footer {
     font-size: 14px;
     color: #666;
 }
+
+/* =========================
+   FOOTER (FINAL FIXED)
+========================= */
+
+.stp-footer {
+  background: #3e3f41;
+  color: #fff;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.stp-footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.stp-footer-col h3,
+.stp-footer-col h4 {
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.stp-footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.stp-footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.stp-footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.stp-footer-col ul li a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.stp-footer-col ul li a:hover {
+  color: #00ff9d;
+}
+
+.stp-footer-bottom {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #1f2937;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.stp-footer-bottom p{
+    color: #eee;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .stp-footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .stp-footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
 
 
 </style>
@@ -586,8 +683,49 @@ And honestly, that’s something everyone needs in today’s busy world.
 
 </div>
 
-<footer>
-    <p>© 2026 SmartToolsPro.online | All Rights Reserved</p>
+
+<footer class="stp-footer"> 
+  <div class="stp-footer-container">
+
+    <div class="stp-footer-col">
+      <h3>Smart Tools</h3>
+      <p>
+        Free online tools for PDFs, images, conversions, and more.
+        Fast, secure, and easy to use.
+      </p>
+    </div>
+
+    <div class="stp-footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/tools.html">Tools</a></li>
+        <li><a href="/Blog/blog-index.html">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="stp-footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/terms.html">Terms</a></li>
+        <li><a href="/disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </div>
+
+    <div class="stp-footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="/contact.html">Contact Us</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="stp-footer-bottom">
+    <p>© 2026 Smart Tools. All rights reserved.</p>
+  </div>
 </footer>
 
 </body>
