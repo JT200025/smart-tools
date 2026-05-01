@@ -64,46 +64,24 @@ header h1 {
 /* =========================
    NAVBAR
 ========================= */
-/* NAVBAR */
 nav {
     background: #ffffff;
-    padding: 12px;
+    padding: 10px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* important */
-    gap: 10px;
 }
 
 nav a {
+    margin: 0 10px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: 0.3s;
 }
 
 nav a:hover {
-    background: #0d6efd;
-    color: #fff;
+    color: #0d6efd;
 }
 
-/* MOBILE FIX */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        width: 90%;
-        text-align: center;
-        border: 1px solid #eee;
-    }
-}
 /* =========================
    ARTICLE HEADER
 ========================= */
@@ -309,11 +287,20 @@ p {
     }
 }
 
+
 /* Mobile */
 @media (max-width: 480px) {
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* allows wrapping if needed */
+    }
+
     nav a {
-        display: block;
-        margin: 8px 0;
+        display: inline-block;   /* KEEP HORIZONTAL */
+        margin: 5px 8px;
+        font-size: 14px;
     }
 
     .stp-footer-container {
@@ -321,6 +308,7 @@ p {
         text-align: center;
     }
 }
+
 
 </style>
 </head>
@@ -346,7 +334,7 @@ p {
     <p class="meta">Updated: 2026 • 5 min read</p>
 </div>
 
-<!-- INTRODUCTION -->
+
 <!-- INTRODUCTION -->
 <h2>Introduction</h2>
 
