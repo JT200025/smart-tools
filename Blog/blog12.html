@@ -64,25 +64,23 @@ header h1 {
 /* =========================
    NAVBAR
 ========================= */
+nav {
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-    nav {
-            background: #ffffff;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
 
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #0d6efd;
-        }
-        
+nav a:hover {
+    color: #0d6efd;
+}
 
 /* =========================
    ARTICLE HEADER
@@ -289,11 +287,20 @@ p {
     }
 }
 
+
 /* Mobile */
 @media (max-width: 480px) {
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* allows wrapping if needed */
+    }
+
     nav a {
-        display: block;
-        margin: 8px 0;
+        display: inline-block;   /* KEEP HORIZONTAL */
+        margin: 5px 8px;
+        font-size: 14px;
     }
 
     .stp-footer-container {
@@ -301,8 +308,6 @@ p {
         text-align: center;
     }
 }
-
-
 
 </style>
 </head>
